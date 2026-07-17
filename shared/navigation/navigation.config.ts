@@ -12,6 +12,11 @@ export const navigationItems: NavigationItem[] = [
         enabled: true,
     },
     {
+        label: "Courses",
+        href: "/courses",
+        enabled: true,
+    },
+    {
         label: "Features",
         href: "/features",
         enabled: false,

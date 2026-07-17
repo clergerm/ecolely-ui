@@ -4,7 +4,7 @@
  */
 
 import HeroSection from "./HeroSection";
-import CoursesSection from "./CoursesSection";
+import { FeaturedCourses } from "@/features/courses";
 
 export default function HomePage() {
 
@@ -15,7 +15,7 @@ export default function HomePage() {
 
                 <HeroSection />
 
-                <CoursesSection />
+                <FeaturedCourses />
 
             </main>
 
