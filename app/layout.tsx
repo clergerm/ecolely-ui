@@ -1,28 +1,40 @@
+/*
+ * Copyright (c) 2026 Ecolely. All rights reserved.
+ * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
+ */
+
 import "./globals.css";
 
+import Header from "@/shared/navigation/components/Header";
+import Footer from "@/shared/ui/Footer";
 
 export const metadata = {
-  title: "Ecolely",
-  description: "Modern learning platform",
+    title: "Ecolely",
+    description: "Modern learning platform",
 };
 
 
 export default function RootLayout({
-                                     children,
-                                   }: {
-  children: React.ReactNode;
-}) {
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
+}>) {
 
-  return (
+    return (
 
-      <html lang="en">
+        <html lang="en">
 
-      <body>
+        <body>
 
-      {children}
+        <Header />
 
-      </body>
+        {children}
 
-      </html>
-  );
+        <Footer />
+
+        </body>
+
+        </html>
+
+    );
 }

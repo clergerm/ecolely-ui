@@ -7,6 +7,7 @@
 
 import Logo from "./Logo";
 import HamburgerButton from "./HamburgerButton";
+import DesktopNavigation from "./DesktopNavigation";
 
 
 export default function Header() {
@@ -38,21 +39,7 @@ export default function Header() {
 
                 <Logo />
 
-
-                <nav
-                    className="
-                        hidden
-                        md:flex
-                        gap-8
-                    "
-                >
-                    <a>Home</a>
-                    <a>Features</a>
-                    <a>Solutions</a>
-                    <a>About</a>
-                    <a>Account</a>
-                </nav>
-
+                <DesktopNavigation />
 
                 <HamburgerButton />
 
