@@ -3,8 +3,9 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import { HomePage } from "@/features/home";
-
-export default function Page() {
-  return <HomePage />;
+export interface Course {
+    id: number;
+    title: string;
+    description: string;
+    featured: boolean
 }

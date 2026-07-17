@@ -3,8 +3,4 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import { HomePage } from "@/features/home";
-
-export default function Page() {
-  return <HomePage />;
-}
+export { default as AboutPage } from "./components/AboutPage";
