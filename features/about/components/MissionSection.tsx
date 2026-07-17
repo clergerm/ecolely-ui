@@ -9,6 +9,7 @@ export default function MissionSection() {
 
         <section
             className="
+                w-full
                 bg-gray-50
                 py-20
             "
@@ -27,6 +28,7 @@ export default function MissionSection() {
                     className="
                         text-3xl
                         font-bold
+                        tracking-tight
                         text-gray-900
                     "
                 >
@@ -36,8 +38,11 @@ export default function MissionSection() {
 
                 <p
                     className="
+                        mx-auto
                         mt-6
+                        max-w-2xl
                         text-lg
+                        leading-8
                         text-gray-600
                     "
                 >
@@ -45,6 +50,7 @@ export default function MissionSection() {
                     more accessible, personalized,
                     and engaging through technology.
                 </p>
+
 
             </div>
 

@@ -5,115 +5,131 @@
 
 import HeroImage from "./HeroImage";
 
-
 export default function HeroSection() {
 
     return (
 
         <section
             className="
-                mx-auto
-                flex
-                max-w-7xl
-                flex-col
-                items-center
-                gap-12
-                px-6
-                py-20
-
-                lg:flex-row
+                w-full
+                bg-gradient-to-b
+                from-slate-100
+                to-slate-200
+                py-24
             "
         >
 
-            {/* Content */}
-
             <div
                 className="
-                    flex-1
-                    text-center
-                    lg:text-left
+                    mx-auto
+                    flex
+                    max-w-7xl
+                    flex-col
+                    items-center
+                    gap-12
+                    px-6
+                    lg:flex-row
                 "
             >
 
-                <h1
-                    className="
-                        text-5xl
-                        font-bold
-                        tracking-tight
-                        text-gray-900
-
-                        md:text-6xl
-                    "
-                >
-                    Learn smarter.
-                    <br />
-
-                    Build your future.
-                </h1>
-
-
-                <p
-                    className="
-                        mt-6
-                        max-w-xl
-                        text-lg
-                        text-gray-600
-                    "
-                >
-                    Ecolely helps students organize learning,
-                    connect knowledge, and achieve academic goals
-                    with modern technology.
-                </p>
-
+                {/* Content */}
 
                 <div
                     className="
-                        mt-8
-                        flex
-                        justify-center
-                        gap-4
-
-                        lg:justify-start
+                        flex-1
+                        text-center
+                        lg:text-left
                     "
                 >
 
-                    <button
+                    <h1
                         className="
-                            rounded-lg
-                            bg-indigo-600
-                            px-6
-                            py-3
-                            text-white
-                            font-medium
-                            hover:bg-indigo-700
+                            text-5xl
+                            font-bold
+                            tracking-tight
+                            text-gray-900
+                            md:text-6xl
                         "
                     >
-                        Get Started
-                    </button>
+                        Learn smarter.
+                        <br />
+
+                        Build your future.
+                    </h1>
 
 
-                    <button
+                    <p
                         className="
-                            rounded-lg
-                            border
-                            px-6
-                            py-3
-                            font-medium
-                            hover:bg-gray-50
+                            mt-6
+                            max-w-xl
+                            text-lg
+                            text-gray-600
                         "
                     >
-                        Learn More
-                    </button>
+                        Ecolely helps students organize learning,
+                        connect knowledge, and achieve academic goals
+                        with modern technology.
+                    </p>
+
+
+                    <div
+                        className="
+                            mt-8
+                            flex
+                            justify-center
+                            gap-4
+                            lg:justify-start
+                        "
+                    >
+
+                        <button
+                            className="
+                                rounded-lg
+                                bg-indigo-600
+                                px-6
+                                py-3
+                                font-medium
+                                text-white
+                                transition
+                                hover:bg-indigo-700
+                            "
+                        >
+                            Get Started
+                        </button>
+
+
+                        <button
+                            className="
+                                rounded-lg
+                                border
+                                border-gray-300
+                                bg-white
+                                px-6
+                                py-3
+                                font-medium
+                                text-gray-700
+                                transition
+                                hover:bg-gray-50
+                            "
+                        >
+                            Learn More
+                        </button>
+
+
+                    </div>
+
 
                 </div>
 
+
+                {/* Image */}
+
+                <HeroImage />
+
+
             </div>
 
-
-            {/* Image */}
-
-            <HeroImage />
-
         </section>
+
     );
 }

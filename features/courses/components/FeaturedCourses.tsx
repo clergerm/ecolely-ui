@@ -26,7 +26,7 @@ export default async function FeaturedCourses() {
         <section
             className="
                 mx-auto
-                max-w-7xl
+                max-w-5xl
                 px-6
                 py-20
             "
@@ -70,7 +70,7 @@ export default async function FeaturedCourses() {
             >
 
                 <CourseList
-                    courses={courses.slice(0, 3)}
+                    courses={courses}
                 />
 
             </div>

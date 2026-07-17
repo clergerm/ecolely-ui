@@ -9,45 +9,56 @@ export default function AboutHero() {
 
         <section
             className="
-                mx-auto
-                max-w-7xl
-                px-6
-                py-20
-                text-center
+                w-full
+                py-24
             "
         >
 
-            <h1
-                className="
-                    text-5xl
-                    font-bold
-                    tracking-tight
-                    text-gray-900
-                    md:text-6xl
-                "
-            >
-                Empowering the next generation
-                of learners
-            </h1>
-
-
-            <p
+            <div
                 className="
                     mx-auto
-                    mt-6
-                    max-w-3xl
-                    text-lg
-                    leading-8
-                    text-gray-600
+                    max-w-5xl
+                    px-6
+                    text-center
                 "
             >
-                Ecolely is building a modern learning
-                platform that helps students organize
-                knowledge, collaborate, and achieve
-                academic success.
-            </p>
+
+                <h1
+                    className="
+                        text-5xl
+                        font-bold
+                        leading-tight
+                        tracking-tight
+                        text-gray-900
+                        md:text-6xl
+                    "
+                >
+                    Empowering the next generation
+                    of learners
+                </h1>
+
+
+                <p
+                    className="
+                        mx-auto
+                        mt-6
+                        max-w-2xl
+                        text-lg
+                        leading-8
+                        text-gray-600
+                    "
+                >
+                    Ecolely is building a modern learning
+                    platform that helps students organize
+                    knowledge, collaborate, and achieve
+                    academic success.
+                </p>
+
+
+            </div>
 
         </section>
 
     );
+
 }

@@ -28,69 +28,85 @@ export default function ValuesSection() {
 
         <section
             className="
-                mx-auto
-                max-w-7xl
-                px-6
+                w-full
                 py-20
             "
         >
 
-            <h2
-                className="
-                    text-center
-                    text-3xl
-                    font-bold
-                "
-            >
-                Our Values
-            </h2>
-
-
             <div
                 className="
-                    mt-12
-                    grid
-                    gap-8
-                    md:grid-cols-3
+                    mx-auto
+                    max-w-5xl
+                    px-6
                 "
             >
 
-                {
-                    values.map((value) => (
+                <h2
+                    className="
+                        text-center
+                        text-3xl
+                        font-bold
+                        tracking-tight
+                        text-gray-900
+                    "
+                >
+                    Our Values
+                </h2>
 
-                        <div
-                            key={value.title}
-                            className="
-                                rounded-xl
-                                border
-                                p-8
-                                shadow-sm
-                            "
-                        >
 
-                            <h3
+                <div
+                    className="
+                        mt-12
+                        grid
+                        gap-8
+                        md:grid-cols-3
+                    "
+                >
+
+                    {
+                        values.map((value) => (
+
+                            <div
+                                key={value.title}
                                 className="
-                                    text-xl
-                                    font-semibold
+                                    rounded-xl
+                                    border
+                                    border-gray-200
+                                    bg-white
+                                    p-8
+                                    shadow-sm
+                                    transition
+                                    hover:shadow-md
                                 "
                             >
-                                {value.title}
-                            </h3>
+
+                                <h3
+                                    className="
+                                        text-xl
+                                        font-semibold
+                                        text-gray-900
+                                    "
+                                >
+                                    {value.title}
+                                </h3>
 
 
-                            <p
-                                className="
-                                    mt-4
-                                    text-gray-600
-                                "
-                            >
-                                {value.description}
-                            </p>
+                                <p
+                                    className="
+                                        mt-4
+                                        leading-7
+                                        text-gray-600
+                                    "
+                                >
+                                    {value.description}
+                                </p>
 
-                        </div>
+                            </div>
 
-                    ))
-                }
+                        ))
+                    }
+
+                </div>
 
             </div>
 

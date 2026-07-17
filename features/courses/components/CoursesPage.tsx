@@ -11,7 +11,6 @@ import {
 import CourseList
     from "./CourseList";
 
-
 export default async function CoursesPage() {
 
 
@@ -23,40 +22,64 @@ export default async function CoursesPage() {
 
         <main
             className="
-                mx-auto
-                max-w-7xl
-                px-6
-                py-16
+                w-full
+                py-20
             "
         >
 
-            <h1
-                className="
-                    text-4xl
-                    font-bold
-                "
-            >
-                All Courses
-            </h1>
+            <section>
+
+                <div
+                    className="
+                        mx-auto
+                        max-w-7xl
+                        px-6
+                    "
+                >
+
+                    <h1
+                        className="
+                            text-4xl
+                            font-bold
+                            tracking-tight
+                            text-gray-900
+                        "
+                    >
+                        All Courses
+                    </h1>
 
 
-            <p
-                className="
-                    mt-4
-                    text-gray-600
-                "
-            >
-                Explore all available courses.
-            </p>
+                    <p
+                        className="
+                            mt-4
+                            max-w-2xl
+                            text-lg
+                            leading-8
+                            text-gray-600
+                        "
+                    >
+                        Explore all available courses
+                        designed to help students learn,
+                        grow, and achieve their goals.
+                    </p>
 
 
-            <div className="mt-10">
+                    <div
+                        className="
+                            mt-10
+                        "
+                    >
 
-                <CourseList
-                    courses={courses}
-                />
+                        <CourseList
+                            courses={courses}
+                        />
 
-            </div>
+                    </div>
+
+
+                </div>
+
+            </section>
 
         </main>
 
