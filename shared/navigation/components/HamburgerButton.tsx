@@ -5,26 +5,41 @@
 
 "use client";
 
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
+
+interface Props {
+    open: boolean;
+    setOpen: (value: boolean) => void;
+}
 
 
-export default function HamburgerButton() {
+export default function HamburgerButton({
+                                            open,
+                                            setOpen,
+                                        }: Props) {
+
 
     return (
 
         <button
+            type="button"
+            onClick={() => setOpen(!open)}
             className="
                 rounded-md
                 p-2
-
                 md:hidden
             "
-            aria-label="Open menu"
+            aria-label="Toggle menu"
         >
 
-            <Menu size={28}/>
+            {
+                open
+                    ? <X size={28}/>
+                    : <Menu size={28}/>
+            }
 
         </button>
 
     );
+
 }
