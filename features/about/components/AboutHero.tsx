@@ -10,7 +10,7 @@ export default function AboutHero() {
         <section
             className="
                 w-full
-                py-24
+                py-20
             "
         >
 
@@ -30,7 +30,7 @@ export default function AboutHero() {
                         leading-tight
                         tracking-tight
                         text-gray-900
-                        md:text-6xl
+                        md:text-5xl
                     "
                 >
                     Empowering the next generation

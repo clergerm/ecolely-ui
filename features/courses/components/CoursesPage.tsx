@@ -32,7 +32,7 @@ export default async function CoursesPage() {
                 <div
                     className="
                         mx-auto
-                        max-w-7xl
+                        max-w-5xl
                         px-6
                     "
                 >

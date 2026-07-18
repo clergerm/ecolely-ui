@@ -51,10 +51,7 @@ export default function HeroSection() {
                             md:text-6xl
                         "
                     >
-                        Learn smarter.
-                        <br />
-
-                        Build your future.
+                        Learn smarter. <br />Manage better. <br />Build your future.
                     </h1>
 
 
