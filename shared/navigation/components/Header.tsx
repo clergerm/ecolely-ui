@@ -5,12 +5,18 @@
 
 "use client";
 
+import { useState } from "react";
+
 import Logo from "./Logo";
-import HamburgerButton from "./HamburgerButton";
 import DesktopNavigation from "./DesktopNavigation";
+import HamburgerButton from "./HamburgerButton";
+import MobileNavigation from "./MobileNavigation";
 
 
 export default function Header() {
+
+    const [open, setOpen] = useState(false);
+
 
     return (
 
@@ -19,21 +25,19 @@ export default function Header() {
                 sticky
                 top-0
                 z-50
+                bg-white
                 border-b
-                bg-white/80
-                backdrop-blur
+                relative
             "
         >
 
             <div
                 className="
-                    mx-auto
                     flex
-                    h-16
-                    max-w-7xl
                     items-center
                     justify-between
                     px-6
+                    py-4
                 "
             >
 
@@ -41,10 +45,27 @@ export default function Header() {
 
                 <DesktopNavigation />
 
-                <HamburgerButton />
+
+                <HamburgerButton
+                    open={open}
+                    setOpen={setOpen}
+                />
 
             </div>
 
+
+            {
+                open && (
+
+                    <MobileNavigation
+                        onNavigate={() => setOpen(false)}
+                    />
+
+                )
+            }
+
         </header>
+
     );
+
 }
