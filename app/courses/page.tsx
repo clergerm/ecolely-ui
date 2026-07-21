@@ -3,15 +3,8 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import {
-    CoursesPage,
-} from "@/features/courses";
-
+import { CoursesPage } from '@/features/courses';
 
 export default function Page() {
-
-    return (
-        <CoursesPage />
-    );
-
+  return <CoursesPage />;
 }

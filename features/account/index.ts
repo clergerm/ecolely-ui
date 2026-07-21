@@ -3,4 +3,4 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-export { default as AccountPage } from "./components/AccountPage";
+export { default as AccountPage } from './components/AccountPage';

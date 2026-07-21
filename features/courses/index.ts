@@ -3,38 +3,14 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-export {
-    default as CoursesPage
-}
-    from "./components/CoursesPage";
+export { default as CoursesPage } from './components/CoursesPage';
 
+export { default as FeaturedCourses } from './components/FeaturedCourses';
 
-export {
-    default as FeaturedCourses
-}
-    from "./components/FeaturedCourses";
+export { default as CourseList } from './components/CourseList';
 
+export { default as CourseCard } from './components/CourseCard';
 
-export {
-    default as CourseList
-}
-    from "./components/CourseList";
+export { getCourses, getFeaturedCourses } from './services/course.service';
 
-
-export {
-    default as CourseCard
-}
-    from "./components/CourseCard";
-
-
-export {
-    getCourses,
-    getFeaturedCourses,
-}
-    from "./services/course.service";
-
-
-export type {
-    Course,
-}
-    from "./types/course";
+export type { Course } from './types/course';

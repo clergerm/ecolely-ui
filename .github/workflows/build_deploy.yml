@@ -15,7 +15,7 @@ on:
         options: [dev, test, prod]
 
       deploy:
-        description: "Deploy?"
+        description: 'Deploy?'
         required: true
         default: false
         type: boolean

@@ -4,8 +4,8 @@
  */
 
 export interface Course {
-    id: number;
-    title: string;
-    description: string;
-    featured: boolean
+  id: number;
+  title: string;
+  description: string;
+  featured: boolean;
 }

@@ -3,24 +3,18 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import AboutHero from "./AboutHero";
-import MissionSection from "./MissionSection";
-import ValuesSection from "./ValuesSection";
-
+import AboutHero from './AboutHero';
+import MissionSection from './MissionSection';
+import ValuesSection from './ValuesSection';
 
 export default function AboutPage() {
+  return (
+    <main>
+      <AboutHero />
 
-    return (
+      <MissionSection />
 
-        <main>
-
-            <AboutHero />
-
-            <MissionSection />
-
-            <ValuesSection />
-
-        </main>
-
-    );
+      <ValuesSection />
+    </main>
+  );
 }
