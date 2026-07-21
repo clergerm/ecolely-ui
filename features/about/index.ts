@@ -3,4 +3,4 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-export { default as AboutPage } from "./components/AboutPage";
+export { default as AboutPage } from './components/AboutPage';

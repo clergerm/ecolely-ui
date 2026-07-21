@@ -3,50 +3,20 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import {
-    Course
-} from "../types/course";
+import { Course } from '../types/course';
 
-
-import CourseCard
-    from "./CourseCard";
-
-
+import CourseCard from './CourseCard';
 
 interface Props {
-
-    courses: Course[];
-
+  courses: Course[];
 }
 
-
-
-export default function CourseList({
-                                       courses,
-                                   }: Props) {
-
-
-    return (
-
-        <div
-            className="
-                space-y-4
-            "
-        >
-
-            {
-                courses.map(course => (
-
-                    <CourseCard
-                        key={course.id}
-                        course={course}
-                    />
-
-                ))
-            }
-
-        </div>
-
-    );
-
+export default function CourseList({ courses }: Props) {
+  return (
+    <div className="space-y-4">
+      {courses.map((course) => (
+        <CourseCard key={course.id} course={course} />
+      ))}
+    </div>
+  );
 }

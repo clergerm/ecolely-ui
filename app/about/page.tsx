@@ -3,12 +3,8 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import { AboutPage } from "@/features/about";
-
+import { AboutPage } from '@/features/about';
 
 export default function Page() {
-
-    return (
-        <AboutPage />
-    );
+  return <AboutPage />;
 }

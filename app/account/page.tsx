@@ -3,11 +3,8 @@
  * Unauthorized copying, modification, distribution, or use of this software is strictly prohibited.
  */
 
-import { AccountPage } from "@/features/account";
+import { AccountPage } from '@/features/account';
 
 export default function Page() {
-
-    return (
-        <AccountPage />
-    );
+  return <AccountPage />;
 }
