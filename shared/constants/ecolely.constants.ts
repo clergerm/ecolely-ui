@@ -4,5 +4,5 @@
  */
 
 //export const HOST_URL = 'http://localhost:8080';
-export const HOST_URL = 'http://50.16.28.130:8080';
+export const HOST_URL = 'http://3.85.226.184:8080';
 export const ROOT_API = '/api/ecolely-service';
